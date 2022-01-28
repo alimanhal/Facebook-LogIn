@@ -62,27 +62,34 @@ class SingIn extends StatelessWidget {
               SizedBox(
                 height: 10,
               ),
-              Padding(
-                padding:
-                    const EdgeInsets.symmetric(horizontal: 10, vertical: 1),
-                child: Container(
-                  decoration: BoxDecoration(
-                    color: Colors.indigo,
-                    borderRadius: BorderRadius.circular(5),
+              Container(
+                child: Padding(
+                  padding:
+                      const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
+
+                  child: Container(
+                    height: 45,
+                    width: 1000,
+                    child: RaisedButton(
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(5),
+                      ),
+                        color: Color.fromRGBO(65,105,225, 0.5),
+                        child: Text("LogIn", style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold, fontSize: 25),),
+
+
+
+
+                        onPressed: (){}),
                   ),
-                  child: TextFormField(
-                    textAlign: TextAlign.center,
-                    decoration: InputDecoration(
-                      labelText: "                             Log In",
-                      labelStyle: TextStyle(fontWeight: FontWeight.bold,fontSize: 20,color: Colors.white)
-                    ),
-                  ),
+
                 ),
               ),
               SizedBox(
                 height: 200,
               ),
               Container(
+
                 child: Align(
                     alignment: Alignment.bottomCenter,
                     child: Text(
@@ -92,8 +99,18 @@ class SingIn extends StatelessWidget {
                         decoration: TextDecoration.underline,
                         color: Colors.white,
                       ),
-                    )),
+                    ),
+                ),
               ),
+              SizedBox(
+                width: 45,
+              ),
+
+              
+
+
+
+
 
 
 
